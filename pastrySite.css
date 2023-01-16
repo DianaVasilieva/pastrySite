@@ -1,0 +1,367 @@
+body{
+	width: 100%;
+	height: 100%;
+}
+.masthead {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  font-size: 1vw;
+  cursor: pointer;
+  margin-left: -57%;
+  margin-top: 1vw;
+
+}
+.warning {
+  border-color: #990000;
+  color: black;
+}
+.warning:hover {
+  background: #990000;
+  color: white;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/Users/dilya/Desktop/site/images/backG.jpg");
+
+  /* Set a specific height */
+  min-height: 63vw; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("/Users/dilya/Desktop/site/images/backG2.jpg");
+
+  /* Set a specific height */
+  min-height: 63vw; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax1 {
+    background-attachment: scroll;
+  }
+}
+
+
+.column {
+  float: center;
+  width: 26vw;
+  margin-bottom: 5vw;
+  margin-top: 4vw;
+  padding: 0 8px;
+  margin-left: 7vw;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100vw;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 6vw;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.bg-warning
+{
+color:  #990000;
+}
+
+.column1 {
+  float: left;
+  width: 25vw;
+  height: 20vw;
+  font-family: 'Gill Sans', sans-serif;
+   font-style: bold;
+   color:red; 
+   font-style: bold; 
+   background-color:white;
+   
+   margin-bottom: 4vw;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 1.5vw;
+  width: 5%;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 36vw;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("/Users/dilya/Desktop/site/images/donuts.jpg");
+
+  /* Set a specific height */
+  min-height: 63vw; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax2 {
+    background-attachment: scroll;
+  }
+}
+
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col1-25, .col1-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.highlighted-text {
+    background-color: #990000;
+    background-position: 50% 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
+.pastry {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #990000, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4vw;
+  
+  margin-left: 20vw;
+
+  font-family: 'Oswald', sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+
+         }
+
+
+  
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #990000;
+    }
+  }
+}  
+
+
+.container9 .btn:hover {
+  background-color: #708090;
+}
+
+hr.style2 {
+	border-top: 3px double white;
+	width: 80vw;
+}
+
+
+.container3{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        
+    }
+    .box{
+        width: 100%;
+        height: 100%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;  /* for demo purpose  */
+    }
+    .stack-top{
+        z-index: 9;
+        margin: 20px; /* for demo purpose  */
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+ 
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+
+h3 {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+}
+
